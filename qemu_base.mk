@@ -26,6 +26,19 @@
 PRODUCT_PACKAGES += \
     adb \
 
+PRODUCT_HOST_PACKAGES += \
+    adb \
+    adbd \
+    e2fsck \
+    mke2fs \
+    selinux_policy \
+    toybox \
+    tzdata_host \
+    tzdata_host_runtime_apex \
+    tzlookup.xml_host_runtime_apex \
+    tz_version_host \
+    tz_version_host_runtime_apex \
+
 # Device modules
 PRODUCT_PACKAGES += \
     adbd \
