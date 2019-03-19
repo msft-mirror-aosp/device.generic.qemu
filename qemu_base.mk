@@ -23,9 +23,6 @@
 # following NDK libraries: libc, libm, libstdc++, libdl, liblog
 
 # Host modules
-PRODUCT_PACKAGES += \
-    adb \
-
 PRODUCT_HOST_PACKAGES += \
     adb \
     adbd \
