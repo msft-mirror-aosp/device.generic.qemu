@@ -25,10 +25,8 @@
 # Host modules
 PRODUCT_HOST_PACKAGES += \
     adb \
-    adbd \
     e2fsck \
     mke2fs \
-    selinux_policy \
     toybox \
     tzdata_host \
     tzdata_host_runtime_apex \
