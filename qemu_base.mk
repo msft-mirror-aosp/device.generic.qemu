@@ -26,13 +26,17 @@
 PRODUCT_HOST_PACKAGES += \
     adb \
     e2fsck \
+    icu_tzdata.dat_host_tzdata_apex \
     mke2fs \
     toybox \
     tzdata_host \
     tzdata_host_runtime_apex \
+    tzdata_host_tzdata_apex \
     tzlookup.xml_host_runtime_apex \
+    tzlookup.xml_host_tzdata_apex \
     tz_version_host \
     tz_version_host_runtime_apex \
+    tz_version_host_tzdata_apex \
 
 # Device modules
 PRODUCT_PACKAGES += \
