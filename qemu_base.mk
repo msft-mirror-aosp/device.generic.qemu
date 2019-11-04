@@ -48,7 +48,6 @@ PRODUCT_PACKAGES += \
     healthd \
     init \
     init.environ.rc \
-    init.rc \
     libbinder \
     libc \
     libctest \
@@ -93,9 +92,8 @@ PRODUCT_PACKAGES += \
 #    mac_permissions.xml \
 
 PRODUCT_COPY_FILES += \
-    system/core/rootdir/init.usb.rc:root/init.usb.rc \
-    system/core/rootdir/init.usb.configfs.rc:root/init.usb.configfs.rc \
-    system/core/rootdir/ueventd.rc:root/ueventd.rc \
+    system/core/rootdir/init.usb.rc:system/etc/init/hw/init.usb.rc \
+    system/core/rootdir/init.usb.configfs.rc:system/etc/init/hw/init.usb.configfs.rc \
     system/core/rootdir/etc/hosts:system/etc/hosts \
 
 PRODUCT_FULL_TREBLE_OVERRIDE := true
@@ -126,7 +124,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS := \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.zygote=zygote32
 PRODUCT_COPY_FILES += \
-    system/core/rootdir/init.zygote32.rc:root/init.zygote32.rc
+    system/core/rootdir/init.zygote32.rc:system/etc/init/hw/init.zygote32.rc
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.carrier=unknown
