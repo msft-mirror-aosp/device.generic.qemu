@@ -107,16 +107,13 @@ PRODUCT_COPY_FILES += \
     device/generic/goldfish/data/etc/config.ini:config.ini \
     device/generic/qemu/advancedFeatures.ini:advancedFeatures.ini \
 
-#$(call inherit-product, $(SRC_TARGET_DIR)/product/core_tiny.mk)
-ifeq ($(TARGET_CORE_JARS),)
-$(error TARGET_CORE_JARS is empty; cannot initialize PRODUCT_BOOT_JARS variable)
+ifeq ($(ART_APEX_JARS),)
+$(error ART_APEX_JARS is empty; cannot initialize PRODUCT_BOOT_JARS variable)
 endif
 
 # The order matters
 PRODUCT_BOOT_JARS := \
-    $(TARGET_CORE_JARS) \
-
-
+    $(ART_APEX_JARS) \
 
 # The set of packages we want to force 'speed' compilation on.
 PRODUCT_DEXPREOPT_SPEED_APPS := \
