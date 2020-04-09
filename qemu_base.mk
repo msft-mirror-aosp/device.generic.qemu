@@ -115,6 +115,9 @@ endif
 PRODUCT_BOOT_JARS := \
     $(ART_APEX_JARS) \
 
+PRODUCT_UPDATABLE_BOOT_JARS := \
+    com.android.conscrypt:conscrypt \
+
 # The set of packages we want to force 'speed' compilation on.
 PRODUCT_DEXPREOPT_SPEED_APPS := \
 
