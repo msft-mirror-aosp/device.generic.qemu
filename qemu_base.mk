@@ -37,7 +37,7 @@ PRODUCT_HOST_PACKAGES += \
 
 # Device modules
 PRODUCT_PACKAGES += \
-    adbd \
+    adbd.com.android.adbd \
     bootanimation \
     debuggerd \
     debuggerd64 \
