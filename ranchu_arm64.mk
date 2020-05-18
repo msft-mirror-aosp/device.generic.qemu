@@ -24,9 +24,6 @@ PRODUCT_DEVICE := generic_arm64
 PRODUCT_BRAND := Android
 PRODUCT_MODEL := AOSP on qemu arm64 emulator
 
-PRODUCT_PACKAGES += \
-    libGLES_android
-
 
 PRODUCT_COPY_FILES += $(call add-to-product-copy-files-if-exists,\
 			$(LOCAL_PATH)/init.ranchu.rc:root/init.ranchu.rc \
